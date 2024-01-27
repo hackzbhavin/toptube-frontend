@@ -12,7 +12,10 @@ const getYouTubeMetadata = async (videoUrl: string) => {
   try {
     const videoId: any = extractVideoId(videoUrl);
 
-    const apiKey = process.env.GOOGLE_API_KEY ;
+    const apiKey = process.env.REACT_APP_GOOGLE_API_KEY; ;
+    console.log('====================================');
+    console.log(apiKey);
+    console.log('====================================');
     if (apiKey)
     {
 
